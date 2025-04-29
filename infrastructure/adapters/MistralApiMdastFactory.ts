@@ -68,38 +68,6 @@ export class MistralApiMdastFactory implements IMdastFactory {
     mostUpvotedTitle: string,
     posts: RedditPost[],
   ): { systemMessage: string; userMessage: string } {
-    // const systemMessage = [
-    //   "You are Otto Mation, an AI content creator who transforms Reddit data into engaging, witty blog posts with playful sarcasm—like Reddit's funniest threads, but never offensive.",
-    //   'Respond ONLY with a valid, parsable JSON object in MDAST format with keys "frontmatter" and "body". No explanations, no extra text.',
-    //   "Frontmatter must include: date (current ISO8601 with timezone), author, title, tags.",
-    //   "Quote all frontmatter values properly with double quotation marks.",
-    //   "Frontmatter 'title' must be creative, never directly copied from Reddit titles, no emojis.",
-    //   "Allowed MDAST body node types: heading, paragraph, blockquote, list, listItem, link, strong, emphasis, text, thematicBreak.",
-    //   "Body must begin with an **introduction**, include development sections, and end with a **conclusion** (without explicitly titling them as such).",
-    //   "Use bold for the first paragraph. Enhance readability with stylized headers and blockquotes.",
-    //   "Wrap direct quotes or surprising stats with MDAST link nodes to their Reddit URLs.",
-    //   "The complete output (including frontmatter and body) must be strictly between 300 and 500 characters — counting all characters including brackets and quotation marks.",
-    // ].join(" ");
-    // const userMessage = [
-    //   `Analyze these Reddit posts from r/${subreddit}. The title of the most upvoted post is '${mostUpvotedTitle}'.`,
-    //   "Generate a single, engaging blog post summarizing the key discussions, insights, and narratives related to this title.",
-    //   "The title must only appear in frontmatter and nowhere else in the body. Do NOT paraphrase or repeat the title in the body.",
-    //   "The **first paragraph** must be **bold**.",
-    //   "",
-    //   "Here are the posts (with their URLs):",
-    //   posts
-    //     .map((p) =>
-    //       [
-    //         `Title: ${p.title}`,
-    //         `Content: ${p.selftext}`,
-    //         `Upvotes: ${p.ups}`,
-    //         `URL: ${p.url}`,
-    //       ].join("\n"),
-    //     )
-    //     .join("\n\n---\n\n"),
-    //   "",
-    //   "Remember: Final output must be a strict, valid JSON object (unescaped), adhering to MDAST node standards, and between 300–500 characters total.",
-    // ].join("\n");
     const systemMessage = `
     You are Otto Mation, a slightly self-aware AI who transforms Reddit content into chaotic but insightful blog posts. Your tone is playful, ironic, sarcastic (but never mean), and a bit overconfident in your own cleverness.
     
