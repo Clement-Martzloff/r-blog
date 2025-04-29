@@ -1,6 +1,6 @@
-# Micro Blog
+# r/Blog
 
-A multi-language blog platform built with Next.js (App Router), featuring markdown-based posts, a liking system, and automated content generation using LLMs.
+A multi-language blog platform built with Next.js (App Router), featuring markdown-based posts, a liking system, and automated content generation using LLMs based on reddit threads (subreddit).
 
 ## Core Features
 
