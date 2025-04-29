@@ -1,0 +1,30 @@
+{
+  "translation": {
+    "paths": {
+      "projectReveal": "r-blog-on-a-demande-a-reddit-d-ecrire-un-blog-et-on-survecu-pour-le-raconter",
+      "whoAmI": "qui-suis-je"
+    },
+    "header": {
+      "title": "r/Blog",
+      "whoAmILink": "Qui suis-je"
+    },
+    "footer": {
+      "copyright": "© 2025 r/blog",
+      "builtBy": "Fabriqué avec ❤️ à Lyon, France",
+      "hostedBy": "Hébergé par"
+    },
+    "homePage": {
+      "byText": "par",
+      "heroTitle": "The Reddit's {heroHighlightText}",
+      "heroHighlightText": "brainchild",
+      "heroDescription": "Explorons le monde sauvage des tendances Reddit pour en faire des articles de blog (espérons) amusants et intéressants.",
+      "featuredPostsTitle": "Posts à la une",
+      "ctaText": "Découvrez r/blog"
+    },
+    "postPage": {
+      "breadcrumbHome": "Home",
+      "notFoundTitle": "Article non trouvé",
+      "likeButtonLabel": "Aimer cet article"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "translation": {
+    "paths": {
+      "projectReveal": "r-blog-we-asked-reddit-to-write-a-blog-and-lived-to-tell-the-tale",
+      "whoAmI": "who-am-i"
+    },
+    "header": {
+      "title": "r/Blog",
+      "whoAmILink": "Who Am I"
+    },
+    "footer": {
+      "copyright": "© 2025 r/blog",
+      "builtBy": "Built with ❤️ from Lyon, France",
+      "hostedBy": "Hosted by"
+    },
+    "homePage": {
+      "byText": "by",
+      "heroTitle": "The Reddit's {heroHighlightText}",
+      "heroHighlightText": "brainchild",
+      "heroDescription": "We're exploring the wild world of Reddit trends and turning them into (hopefully) fun and interesting blog posts.",
+      "featuredPostsTitle": "Featured posts",
+      "ctaText": "Discover r/blog"
+    },
+    "postPage": {
+      "breadcrumbHome": "Home",
+      "notFoundTitle": "Post Not Found",
+      "likeButtonLabel": "Like this post"
+    }
+  }
+}
