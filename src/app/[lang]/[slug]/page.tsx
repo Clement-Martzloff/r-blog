@@ -1,5 +1,4 @@
-import { I18nLocales, locales } from "@/config/i18n";
-import { getAllPostsServer } from "@/infrastructure/framework/nextjs/server-functions/all-posts";
+import { I18nLocales } from "@/config/i18n";
 import { getPostWithLikesServer } from "@/infrastructure/framework/nextjs/server-functions/post";
 import { FormattedPostWithLikes } from "@/infrastructure/framework/nextjs/utils/formatPostForPresentation";
 import AuthorAvatar from "@/src/app/[lang]/[slug]/components/AuthorAvatar";
@@ -10,24 +9,6 @@ import { Badge } from "@/src/components/ui/badge";
 import { getDictionary } from "@/src/lib/dictionaries";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
-export async function generateStaticParams() {
-  const params = await Promise.all(
-    locales.map(async (locale: string) => {
-      const posts = await getAllPostsServer(locale as I18nLocales);
-      if (posts === null) {
-        return notFound();
-      }
-
-      return posts.map((post) => ({
-        lang: locale,
-        slug: post.slug,
-      }));
-    }),
-  );
-
-  return params.flat();
-}
 
 export async function generateMetadata({
   params,
