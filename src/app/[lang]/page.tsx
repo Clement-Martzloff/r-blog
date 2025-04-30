@@ -5,6 +5,8 @@ import HeroSection from "@/src/app/[lang]/components/HeroSection";
 import { getDictionary } from "@/src/lib/dictionaries";
 import { notFound } from "next/navigation";
 
+export const revalidate = 10;
+
 export default async function HomePage({
   params,
 }: {
