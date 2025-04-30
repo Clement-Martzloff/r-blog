@@ -1,7 +1,5 @@
 import { I18nLocales } from "@/config/i18n";
-
 import { GetAllPostsUseCase } from "@/core/usecases/GetAllPostsUseCase";
-
 import {
   FormattedPostWithLikes,
   formatPostForPresentation,
